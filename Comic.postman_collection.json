@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "829d013c-b6ab-42e9-b7ec-d01fa6266ec4",
+		"name": "Comic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39067755"
+	},
+	"item": [
+		{
+			"name": "New request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Spider-Man\",\r\n  \"authorName\": \"Frank Miller\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 19.99,\r\n  \"discount\": 2.50,\r\n  \"numberOfPages\": 200,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A classic Batman graphic novel where Bruce Wayne returns from retirement.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comic-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic-books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Spider-Man\",\r\n  \"authorName\": \"Frank Miller\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 19.99,\r\n  \"discount\": 2.50,\r\n  \"numberOfPages\": 200,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A classic Batman graphic novel where Bruce Wayne returns from retirement.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comic-books?page=1&limit=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic-books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Spider-Man\",\r\n  \"authorName\": \"Frank Miller\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 19.99,\r\n  \"discount\": 2.50,\r\n  \"numberOfPages\": 200,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A classic Batman graphic novel where Bruce Wayne returns from retirement.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comic-books/671010fac8d74cb00a54544f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic-books",
+						"671010fac8d74cb00a54544f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New request",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Spider-Man\",\r\n  \"authorName\": \"Frank Miller\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 29.99,\r\n  \"discount\": 7.50,\r\n  \"numberOfPages\": 200,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A classic Batman graphic novel where Bruce Wayne returns from retirement.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comic-books/671010fac8d74cb00a54544f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic-books",
+						"671010fac8d74cb00a54544f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New request",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookName\": \"Spider-Man\",\r\n  \"authorName\": \"Frank Miller\",\r\n  \"yearOfPublication\": 1986,\r\n  \"price\": 29.99,\r\n  \"discount\": 7.50,\r\n  \"numberOfPages\": 200,\r\n  \"condition\": \"new\",\r\n  \"description\": \"A classic Batman graphic novel where Bruce Wayne returns from retirement.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/comic-books/671010fac8d74cb00a54544f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic-books",
+						"671010fac8d74cb00a54544f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
