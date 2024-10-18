@@ -110,7 +110,7 @@ The Comic Book API is a RESTful API that allows users to manage comic book infor
 
 ## Postman Collection
 
-A Postman collection is included in this project for testing all API endpoints. Import the collection from the `Postman_Collection.json` file.
+A Postman collection is included in this project for testing all API endpoints. Import the collection from the `Comic.postman_collection.json` file.
 
 ## License
 
